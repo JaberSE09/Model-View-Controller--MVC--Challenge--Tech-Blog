@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nodemon server",
+    "watch": "node seeds/index.js",
     "start": "node server.js"
   },
   "repository": {
@@ -15,6 +16,7 @@
   "license": "ISC",
   "homepage": "https://github.com/JaberSE09/Model-View-Controller--MVC--Challenge--Tech-Blog",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "dotenv": "^16.0.1",
     "express": "^4.17.3",
     "express-handlebars": "^6.0.2",
