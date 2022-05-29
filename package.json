@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon server",
-    "watch": "node seeds/index.js",
+    "watch": "nodemon server",
+    "seed": "node seeds/index.js",
     "start": "node server.js"
   },
   "repository": {

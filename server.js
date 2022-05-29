@@ -1,5 +1,5 @@
 const express = require('express')
-const routes = require('./controllers')
+const routes = require('./controllers/api')
 const { engine } = require('express-handlebars')
 
 const app = express()
