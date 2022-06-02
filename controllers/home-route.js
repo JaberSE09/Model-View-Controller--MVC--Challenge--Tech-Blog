@@ -11,16 +11,8 @@ router.get('/', (req, res) => {
       'desc',
       'title',
       'created_at',
-      [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
     ],
     include: [
-      {
-        model: Comment,
-        attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-        include: {
-          model: User,
-          attributes: ['username']
-        }
       },
       {
         model: User,
@@ -57,14 +49,6 @@ router.get('/post/:id', (req, res) => {
     ],
     include: [
       {
-        model: Comment,
-        attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-        include: {
-          model: User,
-          attributes: ['username']
-        }
-      },
-      {
         model: User,
         attributes: ['username']
       }
@@ -97,13 +81,15 @@ router.get('/login', (req, res) => {
 
   res.render('login');
 });
+
+
 router.get('/signup', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
     return;
   }
-
   res.render('signup');
 });
+
 
 module.exports = router;

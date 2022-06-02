@@ -2,8 +2,9 @@
   <div class="card-title row text-light">
     <h3 class="card-header bg-danger col-8">{{title}}</h3>
     <div class="card-header bg-danger col"> {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}}
-    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-  </div></div>
+    <br><a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+  </div>
+</div>
   <div class="card-body">
     <p class="card-text">{{desc}}</p>
   </div>
