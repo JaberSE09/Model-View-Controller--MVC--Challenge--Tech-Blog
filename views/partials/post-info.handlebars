@@ -1,6 +1,6 @@
 <article class="card mb-6">
   <div class="card-title row text-light">
-    <h3 class="card-header bg-danger col-8">{{title}}</h3>
+    <h3 class="card-header bg-danger col-8 "><a class="text-white" href="/post/{{id}}">{{title}}</a></h3>
     <div class="card-header bg-danger col"> {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}}
     <br><a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
   </div>

@@ -10,13 +10,17 @@ const sequelize = require("./config/connection");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
-  secret: 'Super secret secret',
-  cookie: {},
-  resave: false,
+  secret: 'super super',
+  cookie: {
+        // Session will automatically expire in 10 minutes
+        expires: 10 * 60 * 1000
+  },
+  resave: true,
+  rolling: true,
   saveUninitialized: true,
   store: new SequelizeStore({
     db: sequelize
-  })
+  }),
 };
 
 app.use(session(sess));
