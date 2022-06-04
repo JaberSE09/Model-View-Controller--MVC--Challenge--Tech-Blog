@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "watch": "nodemon server",
-    "start": "node server",
+    "watch": "nodemon server.js",
+    "start": "node server.js",
     "seeds": "node seeds/index.js"
   },
   "author": "Sajid Jaber",
