@@ -1,14 +1,13 @@
 {
-  "name": "hacker-news-clone",
+  "name": "tech_blog",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "watch": "nodemon server",
     "start": "node server",
     "seeds": "node seeds/index.js"
   },
-  "author": "",
+  "author": "Sajid Jaber",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^4.0.1",
@@ -23,5 +22,14 @@
   },
   "devDependencies": {
     "jest": "^25.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaberSE09/Model-View-Controller--MVC--Challenge--Tech-Blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JaberSE09/Model-View-Controller--MVC--Challenge--Tech-Blog/issues"
+  },
+  "homepage": "https://github.com/JaberSE09/Model-View-Controller--MVC--Challenge--Tech-Blog#readme",
+  "description": ""
 }
