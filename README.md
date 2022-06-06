@@ -7,8 +7,6 @@ Created to showcase tech news and mvc pattern layout.
 
 ## Table of Contents
 
-
-
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
